@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/elements.css" />
     <title>SweetLanding</title>
   </head>
   <body>
@@ -61,37 +62,62 @@
             >
           </li>
         </ul>
+
+        <div class="navigation__close">
+          <span class="navigation__close-line"></span>
+          <span class="navigation__close-line"></span>
+        </div>
       </nav>
-      <button class="button" type="button">
-        <span class="button__label button__label-header link">Buy now</span>
-      </button>
+
+      <div class="header__wrapper">
+        <div class="header__burger burger">
+          <span class="burger__line burger__line-first"></span>
+          <span class="burger__line burger__line-second"></span>
+          <span class="burger__line burger__line-third"></span>
+        </div>
+
+        <button class="button" type="button">
+          <span class="button__label button__label-header link">Buy now</span>
+        </button>
+      </div>
     </header>
-    <!--<svg class="button__icon" width="20" height="20">
-          <use href="./img/svg/sprite.svg#icon-arrow"></use>
-        </svg>header end-->
+
+    <!--header end-->
     <main>
       <!--hero-->
+
       <section class="hero">
         <div class="container">
-          <div class="hero__column">
-            <h1 class="hero__title">ice cream made with passion</h1>
-            <button class="hero__button button button-dark" type="button">
-              <span class="button__label button__label-header link"
-                >Products</span
-              >
-            </button>
-            <button class="hero__button button" type="button">
-              <span class="button__label button__label-header link"
-                >How it’s made?</span
-              >
-            </button>
-          </div>
-          <div class="hero__column">
-            <div class="hero__info"></div>
+          <div class="hero__wrapper">
+            <div class="hero__column">
+              <h1 class="hero__title">
+                ice cream made with <span>passion</span>
+              </h1>
+              <button class="hero__button button button-dark" type="button">
+                <span
+                  class="button__label button__label-header button__label-dark link"
+                  >Products</span
+                >
+              </button>
+              <button class="hero__button button" type="button">
+                <span class="button__label button__label-header link"
+                  >How it’s made?</span
+                >
+              </button>
+            </div>
+            <div class="hero__column">
+              <div class="hero__info info">
+                <p info__content><span>16</span>cafes</p>
+              </div>
+              <div class="hero__info info">
+                <p info__content><span>23</span>food trucks</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <!--hero  end-->
     </main>
+    <script src="./js/main.js"></script>
   </body>
 </html>

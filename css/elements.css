@@ -1,0 +1,119 @@
+/* ------------button-------------*/
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  padding-left: 35px;
+  padding-right: 35px;
+  height: 44px;
+  color: var(--dark-pink-color);
+  background-color: var(--white-color);
+  border: none;
+  border-radius: 22px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.button__label-header {
+}
+.button__label-header::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-left: 8px;
+  background-image: url(../img/svg/arrow1.svg);
+  background-size: 10px 10px;
+}
+.navigation__link:hover,
+.navigation__link:focus,
+.navigation__link:active {
+  color: var(--dark-pink-color);
+  transition: all 0.3s ease 0s;
+}
+.button:focus,
+.button:active,
+.button:hover {
+  color: var(--white-color);
+  background-color: var(--dark-pink-color);
+}
+
+.button:focus .button__label-header::after,
+.button:active .button__label-header::after,
+.button:hover .button__label-header::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-left: 8px;
+  background-image: url(../img/svg/arrow2.svg);
+  background-size: 10px 10px;
+}
+/*----------------button- end-------------*/
+
+/*----------------dark-button--------------*/
+.button-dark {
+  color: var(--white-color);
+  background-color: var(--dark-pink-color);
+  transition: all 0.4s ease 0s;
+}
+.button__label-dark:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-left: 8px;
+  background-image: url(../img/svg/arrow2.svg);
+  background-size: 10px 10px;
+  transition: all 0.4s ease 0s;
+}
+.button-dark:focus,
+.button-dark:active,
+.button-dark:hover {
+  color: var(--dark-pink-color);
+  background-color: var(--white-color);
+}
+
+.button-dark:focus .button__label-header::after,
+.button-dark:active .button__label-header::after,
+.button-dark:hover .button__label-header::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-left: 8px;
+  background-image: url(../img/svg/arrow1.svg);
+  background-size: 10px 10px;
+}
+
+/*----------------dark-button- end-------------*/
+
+/* ------------burger-------------*/
+
+.header__burger {
+  width: 30px;
+  height: 17px;
+  position: relative;
+  display: none;
+}
+.burger {
+}
+.burger__line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--dark-pink-color);
+  position: absolute;
+  left: 0;
+}
+.burger__line-first {
+  top: 0;
+}
+.burger__line-second {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.burger__line-third {
+  bottom: 0;
+}
+/* ------------burger end-------------*/
