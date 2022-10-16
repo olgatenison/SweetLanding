@@ -87,33 +87,3 @@
 }
 
 /*----------------dark-button- end-------------*/
-
-/* ------------burger-------------*/
-
-.header__burger {
-  width: 30px;
-  height: 17px;
-  position: relative;
-  display: none;
-}
-.burger {
-}
-.burger__line {
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: var(--dark-pink-color);
-  position: absolute;
-  left: 0;
-}
-.burger__line-first {
-  top: 0;
-}
-.burger__line-second {
-  top: 50%;
-  transform: translateY(-50%);
-}
-.burger__line-third {
-  bottom: 0;
-}
-/* ------------burger end-------------*/
