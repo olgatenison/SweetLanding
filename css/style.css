@@ -254,7 +254,7 @@ body {
   background-image: url(../img/hero.png);
   background-repeat: no-repeat;
   background-size: 594px 590px;
-  background-position: 74% 110px;
+  background-position: 70% 110px;
   background-color: var(--light-pink-color);
 }
 .hero__wrapper {
