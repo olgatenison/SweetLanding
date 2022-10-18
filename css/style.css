@@ -253,15 +253,14 @@ body {
 
   background-image: url(../img/hero.png);
   background-repeat: no-repeat;
-  background-size: 604px 600px;
-  background-position: 72% 100px;
+  background-size: 594px 590px;
+  background-position: 74% 110px;
   background-color: var(--light-pink-color);
 }
 .hero__wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 56px;
 }
 .hero__column {
 }
@@ -293,13 +292,14 @@ body {
 }
 .hero__info {
   position: relative;
+  margin-right: 15px;
 }
 .info__content {
   color: var(--white-color);
   font-size: 14px;
   text-align: end;
   margin-bottom: 15px;
-  z-index: 20;
+  z-index: 5;
 }
 .hero__info span {
   display: block;
@@ -324,16 +324,105 @@ body {
 .hero__description {
   height: 200px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+.hero__milk {
+  position: absolute;
+  width: 200px;
+  z-index: 1;
+}
+
+/*----------------hero decor circle--------------*/
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hero__svg {
+  width: 150px;
+  height: 150px;
+  animation: rotate linear 20s infinite;
+}
+
+.hero__txt {
+  font-size: 29px;
+  fill: white;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
 }
 .hero__decor {
+  padding-top: 120px;
+  margin-right: -35px;
+  justify-content: flex-end;
   width: 188px;
 }
-.hero__txt {
-  padding-top: 35px;
-  max-width: 180px;
+/*----------------hero decor circle end--------------*/
+
+/*----------------accordion--------------*/
+.accordion {
+  margin-top: 120px;
+  display: flex;
+
+  flex-direction: column-reverse;
+  justify-content: baseline;
+  margin-left: 180px;
+}
+.accordion:hover .accordion-content {
+  max-height: 200px;
+}
+.accordion-toggle {
+  -webkit-transition: background 0.1s linear;
+  -moz-transition: background 0.1s linear;
+  -ms-transition: background 0.1s linear;
+  -o-transition: background 0.1s linear;
+  transition: background 0.1s linear;
+  background: var(--white-color);
+
+  margin-top: 15px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url(../img/svg/arrow1.svg);
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--white-color);
+  z-index: 2;
+}
+
+.accordion-toggle:hover {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url(../img/svg/arrow2.svg);
+  background-size: 10px 10px;
+  transform: rotate(270deg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--dark-pink-color);
+}
+.accordion-content {
+  -webkit-transition: max-height 1s;
+  -moz-transition: max-height 1s;
+  -ms-transition: max-height 1s;
+  -o-transition: max-height 1s;
+  transition: max-height 1s;
+  background: var(--light-pink-color);
+  overflow: hidden;
+  max-height: 0;
+}
+.accordion-inner {
+  max-width: 190px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 18px;
   font-size: 14px;
   color: var(--white-color);
+  background-color: var(--light-pink-color);
 }
+
+/*----------------accordion end--------------*/
