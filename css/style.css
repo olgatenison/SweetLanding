@@ -402,7 +402,7 @@ body {
   border-radius: 50%;
   background-image: url(../img/svg/arrow2.svg);
   background-size: 10px 10px;
-  transform: rotate(270deg);
+  transform: rotate(90deg);
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--dark-pink-color);
