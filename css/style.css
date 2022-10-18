@@ -365,10 +365,10 @@ body {
 .accordion {
   margin-top: 120px;
   display: flex;
-
-  flex-direction: column-reverse;
-  justify-content: baseline;
+  flex-direction: column;
+  justify-content: flex-start;
   margin-left: 180px;
+  position: relative;
 }
 .accordion:hover .accordion-content {
   max-height: 200px;
@@ -381,7 +381,7 @@ body {
   transition: background 0.1s linear;
   background: var(--white-color);
 
-  margin-top: 15px;
+  margin-bottom: 15px;
   display: block;
   width: 30px;
   height: 30px;
