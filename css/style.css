@@ -363,10 +363,11 @@ body {
 
 /*----------------accordion--------------*/
 .accordion {
-  margin-top: 120px;
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-self: flex-start;
   margin-left: 180px;
   position: relative;
 }
