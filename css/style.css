@@ -414,8 +414,10 @@ body {
   -o-transition: max-height 1s;
   transition: max-height 1s;
   background: var(--light-pink-color);
+
   overflow: hidden;
   max-height: 0;
+  z-index: 5;
 }
 .accordion-inner {
   max-width: 190px;
@@ -424,6 +426,75 @@ body {
   font-size: 14px;
   color: var(--white-color);
   background-color: var(--light-pink-color);
+  padding: 10px;
+  z-index: 5;
 }
 
 /*----------------accordion end--------------*/
+
+@media screen and (max-width: 960px) {
+  .hero__column {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero__button:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .hero__button {
+    width: 265px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero {
+    min-height: 380px;
+
+    padding-top: 151px;
+    margin-top: -111px;
+
+    background-image: url(../img/hero.png);
+    background-repeat: no-repeat;
+    background-size: 484px 480px;
+    background-position: 80% 96px;
+    background-color: var(--light-pink-color);
+  }
+  .hero__title {
+    font-size: 22px;
+    line-height: 25px;
+
+    max-width: 162px;
+    margin-bottom: 40px;
+  }
+  .hero__title span {
+    font-size: 34px;
+    line-height: 30px;
+  }
+  .hero__column {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero__svg {
+    width: 100px;
+    height: 100px;
+  }
+  .hero__txt {
+    font-size: 29px;
+    fill: white;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+  .hero__decor {
+    padding-top: 30px;
+    margin-right: -55px;
+    justify-content: flex-end;
+    width: 168px;
+  }
+  .accordion {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: flex-start;
+    margin-left: 120px;
+    position: relative;
+  }
+}
