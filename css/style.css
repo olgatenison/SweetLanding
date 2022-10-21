@@ -234,7 +234,7 @@ body {
     display: none;
   }
   .header__burger {
-    margin-right: 10px;
+    margin-right: 20px;
   }
   .header__navigation {
     position: fixed;
@@ -330,7 +330,7 @@ body {
 }
 .hero__milk {
   position: absolute;
-  width: 200px;
+  width: 400px;
   z-index: 1;
 }
 
@@ -368,8 +368,8 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-self: flex-start;
-  margin-left: 180px;
   position: relative;
+  padding-left: 175px;
 }
 .accordion:hover .accordion-content {
   max-height: 200px;
@@ -382,7 +382,7 @@ body {
   transition: background 0.1s linear;
   background: var(--white-color);
 
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   display: block;
   width: 30px;
   height: 30px;
@@ -443,14 +443,19 @@ body {
   .hero__button {
     width: 265px;
   }
+  .accordion {
+    margin-top: 55px;
+    padding-left: 0;
+  }
+  .accordion-inner {
+    max-width: 260px;
+  }
 }
 @media screen and (max-width: 767px) {
   .hero {
     min-height: 380px;
-
     padding-top: 151px;
     margin-top: -111px;
-
     background-image: url(../img/hero.png);
     background-repeat: no-repeat;
     background-size: 484px 480px;
@@ -460,7 +465,6 @@ body {
   .hero__title {
     font-size: 22px;
     line-height: 25px;
-
     max-width: 162px;
     margin-bottom: 40px;
   }
@@ -484,17 +488,53 @@ body {
   }
   .hero__decor {
     padding-top: 30px;
-    margin-right: -55px;
-    justify-content: flex-end;
-    width: 168px;
+    padding-left: 50px;
   }
   .accordion {
-    margin-top: 70px;
+    margin-top: 30px;
+    display: flex;
+    position: relative;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-self: flex-start;
-    margin-left: 120px;
     position: relative;
+  }
+  .accordion-inner {
+    max-width: 320px;
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 14px;
+    color: var(--white-color);
+    background-color: var(--light-pink-color);
+    padding: 10px;
+    z-index: 5;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero {
+    min-height: 500px;
+    padding-top: 151px;
+    margin-top: -111px;
+
+    background-image: url(../img/hero.png);
+    background-repeat: no-repeat;
+    background-size: 484px 480px;
+    background-position: 18px 95px;
+    background-color: var(--light-pink-color);
+  }
+  .hero__milk {
+    display: none;
+  }
+  .accordion {
+    display: none;
+  }
+  .hero__info {
+    display: none;
+  }
+  .hero__decor {
+    padding-left: 0px;
+    padding-top: 20px;
   }
 }

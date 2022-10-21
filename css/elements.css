@@ -157,3 +157,8 @@
     width: 152px;
   }
 }
+@media screen and (max-width: 500px) {
+  .hero__button {
+    display: block;
+  }
+}
