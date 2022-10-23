@@ -319,6 +319,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-bottom: 20px;
 }
 .hero__column {
 }
@@ -385,12 +386,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-}
-.hero__milk {
-  position: absolute;
-  width: 400px;
-  z-index: 1;
 }
 
 /*----------------dark-button--------------*/
@@ -452,9 +447,8 @@ body {
   letter-spacing: 0.2rem;
 }
 .hero__decor {
-  padding-top: 120px;
   margin-right: -35px;
-  justify-content: flex-end;
+  justify-content: flex-start;
   width: 188px;
 }
 /*----------------hero decor circle end--------------*/
@@ -468,6 +462,13 @@ body {
   align-self: flex-start;
   position: relative;
   padding-left: 175px;
+  position: relative;
+}
+.hero__milk {
+  z-index: 0;
+  position: absolute;
+  bottom: 80px;
+  width: 250px;
 }
 .accordion:hover .accordion-content {
   max-height: 200px;
@@ -544,11 +545,15 @@ body {
     width: 265px;
   }
   .accordion {
-    margin-top: 55px;
+    margin-top: 25px;
     padding-left: 0;
   }
   .accordion-inner {
     max-width: 260px;
+  }
+  .hero__decor {
+    margin-right: 2px;
+    width: 150px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -587,19 +592,25 @@ body {
     letter-spacing: 0.2rem;
   }
   .hero__decor {
-    padding-top: 30px;
-    padding-left: 50px;
+    margin-right: 2px;
+    width: 100px;
+  }
+  .hero__description {
+    height: 180px;
   }
   .accordion {
-    margin-top: 30px;
     display: flex;
     position: relative;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-self: flex-start;
     position: relative;
+  }
+  .hero__milk {
+    z-index: 0;
+    position: absolute;
+    top: 470px;
   }
   .accordion-inner {
     max-width: 320px;
