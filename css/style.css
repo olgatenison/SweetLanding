@@ -541,6 +541,10 @@ body {
     background-position: center 110px;
     background-color: var(--light-pink-color);
   }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 @media screen and (max-width: 960px) {
   .hero__column {
@@ -781,11 +785,11 @@ body {
   display: flex;
   flex-direction: column;
   grid-column: span 2;
-  padding: 156px 44px 44px 50px;
+  padding: 176px 44px 35px 44px;
 }
 .item {
   border-radius: 24px;
-  height: 525px;
+  min-height: 525px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -808,7 +812,7 @@ body {
   text-transform: uppercase;
   font-weight: 400;
   margin-bottom: 15px;
-  padding-bottom: 70px;
+  padding-bottom: 40px;
   position: relative;
 }
 .item__title::after {
@@ -825,6 +829,7 @@ body {
   line-height: 28px;
   letter-spacing: 4%;
   text-align: center;
+  padding-bottom: 30px;
 }
 .item-first {
   background-color: var(--light-pink-color);
@@ -836,3 +841,202 @@ body {
   background-color: var(--light-green);
 }
 /*---------------------products-end-------------*/
+
+/*---------------------products accordion-----------------*/
+summary {
+  background: var(--white-color);
+
+  margin: 0 auto;
+  margin-bottom: 10px;
+  display: block;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url(../img/svg/arrow1.svg);
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--white-color);
+  z-index: 2;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+details {
+  color: var(--white-color);
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 4%;
+  text-align: center;
+}
+details[open] summary {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url(../img/svg/arrow2.svg);
+  background-size: 10px 10px;
+  transform: rotate(270deg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--dark-pink-color);
+}
+
+/*---------------------products accordion end-----------------*/
+
+/*---------------------products media-----------------*/
+@media screen and (max-width: 960px) {
+  .products__pre-title {
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 4%;
+  }
+  .section-title {
+    font-size: 48px;
+    line-height: 55px;
+  }
+  .products__title {
+    margin-bottom: 181px;
+  }
+  .products__item {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 2;
+    padding: 160px 11px 25px 11px;
+  }
+  .item {
+    min-height: 400px;
+  }
+  .item__pic {
+    position: absolute;
+    letter-spacing: 4%;
+    top: -35%;
+    left: 0;
+  }
+  .item__title {
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 4%;
+
+    margin-bottom: 15px;
+    padding-bottom: 40px;
+    position: relative;
+  }
+
+  .item__text,
+  details {
+    font-size: 14px;
+    line-height: 24px;
+
+    padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .products__pre-title {
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 4%;
+  }
+  .section-title {
+    font-size: 48px;
+    line-height: 55px;
+  }
+  .products__title {
+    margin-bottom: 151px;
+  }
+  .products__item {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 2;
+    padding: 120px 11px 25px 11px;
+  }
+  .item {
+    min-height: 400px;
+  }
+  .item__pic {
+    position: absolute;
+    letter-spacing: 4%;
+    top: -35%;
+    left: 0;
+    max-width: 220px;
+  }
+  .item__title {
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 4%;
+
+    margin-bottom: 15px;
+    padding-bottom: 40px;
+    position: relative;
+  }
+
+  .item__text,
+  details {
+    font-size: 14px;
+    line-height: 24px;
+
+    padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .products__title {
+    margin-bottom: 121px;
+  }
+  .item {
+    min-height: 300px;
+  }
+  .item__pic {
+    position: absolute;
+    letter-spacing: 4%;
+    top: -20%;
+    left: 0;
+    max-width: 180px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .products {
+    padding-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .products__pre-title {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 4%;
+  }
+  .section-title {
+    font-size: 34px;
+    line-height: 35px;
+  }
+  .products__title {
+    margin-bottom: 191px;
+  }
+  .products__list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 24px;
+    row-gap: 200px;
+  }
+  .products__item {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 6;
+    padding: 120px 30px 15px 30px;
+  }
+  .item {
+    border-radius: 24px;
+    min-height: 425px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  .item__pic {
+    position: absolute;
+    letter-spacing: 4%;
+    top: -40%;
+    left: 0;
+    max-width: 280px;
+  }
+}
