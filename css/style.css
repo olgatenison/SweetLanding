@@ -1016,14 +1016,14 @@ details[open] summary {
   }
   .products__list {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 24px;
     row-gap: 200px;
   }
   .products__item {
     display: flex;
     flex-direction: column;
-    grid-column: span 6;
+    grid-column: span 1;
     padding: 120px 30px 15px 30px;
   }
   .item {
@@ -1169,3 +1169,102 @@ details[open] summary {
   }
 }
 /*--------------------- media how section end-----------------*/
+
+/*--------------------- why section--------------------*/
+.why {
+  padding-top: 20px;
+  padding-bottom: 70px;
+  background-color: var(--super-light-rink-color);
+}
+
+.why__title {
+  display: none;
+}
+.why__wrapper {
+  margin: 0 auto;
+}
+.why__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 60px;
+  row-gap: 38px;
+}
+.why__item {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 1;
+}
+.why__item img {
+  width: 60px;
+  margin-bottom: 30px;
+}
+.why__number {
+  font-family: Titan One;
+  font-size: 58px;
+  line-height: 66px;
+  letter-spacing: 4%;
+  font-weight: 400;
+  color: var(--dark-pink-color);
+
+  margin-bottom: 15px;
+}
+.why__description {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  max-width: 200px;
+  color: var(--black-color);
+}
+/*--------------------- why section end-----------------*/
+/*--------------------- media why section----------------*/
+@media screen and (max-width: 767px) {
+  .why {
+    padding-top: 20px;
+    padding-bottom: 70px;
+    background-color: var(--super-light-rink-color);
+  }
+  .why__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 60px;
+    row-gap: 50px;
+  }
+  .why__item {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 2;
+    padding-left: 25px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .why {
+    padding-top: 20px;
+    padding-bottom: 70px;
+    background-color: var(--super-light-rink-color);
+  }
+  .why__item img {
+    width: 60px;
+    margin-bottom: 10px;
+  }
+  .why__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 60px;
+    row-gap: 50px;
+  }
+  .why__item {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 4;
+    padding-left: 25px;
+  }
+  .why__description {
+    max-width: 280px;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 4%;
+  }
+}
+
+/*--------------------- media why section end-----------------*/
