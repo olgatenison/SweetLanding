@@ -553,6 +553,9 @@ body {
     margin-right: 2px;
     width: 150px;
   }
+  .hero__milk {
+    top: 520px;
+  }
 }
 @media screen and (max-width: 767px) {
   .hero {
@@ -722,4 +725,9 @@ body {
     display: block;
   }
 }
-/*----------------media hero end--------------*/
+
+/*----------------media buttom end--------------*/
+
+/*---------------------products-----------------*/
+
+/*---------------------products-end-------------*/
