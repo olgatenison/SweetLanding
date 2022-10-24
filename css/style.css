@@ -1118,6 +1118,12 @@ details[open] summary {
 /*---------------------media how section-----------------*/
 
 @media screen and (max-width: 960px) {
+  .how {
+    padding-top: 55px;
+  }
+  .how__title {
+    padding-bottom: 40px;
+  }
   .how__pic {
     max-width: 330px;
     padding-top: 35px;
