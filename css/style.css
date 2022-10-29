@@ -1053,16 +1053,16 @@ details[open] summary {
 
 /*---------------------how section-----------------*/
 .how {
-  padding-top: 125px;
+  padding-top: 100px;
   background-color: var(--super-light-rink-color);
-  padding-bottom: 90px;
+  padding-bottom: 30px;
 }
 
 .how__pre-title {
 }
 
 .how__title {
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 }
 
 .how__wrapper {
@@ -1371,7 +1371,7 @@ details[open] summary {
 
 .locations {
   padding-top: 70px;
-  padding-bottom: 80px;
+  padding-bottom: 10px;
   background-image: linear-gradient(
     to top,
     var(--super-light-rink-color) 65%,
@@ -1481,6 +1481,15 @@ details[open] summary {
   line-height: 29px;
   letter-spacing: 4%;
 }
+.locations__wrapper {
+  padding: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.locations__button:not(:last-child) {
+  margin-right: 35px;
+}
 
 /*--------locations section end-----------------*/
 
@@ -1550,8 +1559,12 @@ details[open] summary {
 
 /*--------footer section -----------------*/
 .footer {
-  padding-top: 70px;
-  padding-bottom: 80px;
+  padding-top: 5px;
+  padding-bottom: 150px;
+  background-image: url(../img/footer/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: 800px 144px;
+  background-position: center bottom;
   background-color: var(--super-light-rink-color);
 }
 .footer__container {
@@ -1596,7 +1609,7 @@ details[open] summary {
   background-color: var(--dark-pink-color);
 }
 .footer__tel {
-  color: var(--black-color);
+  color: var(--grey-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 29px;
@@ -1617,7 +1630,12 @@ details[open] summary {
 @media screen and (max-width: 767px) {
   .footer {
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 180px;
+    background-image: url(../img/footer/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: 800px 144px;
+    background-position: center bottom;
+    background-color: var(--super-light-rink-color);
   }
   .footer__container {
     justify-content: center;
