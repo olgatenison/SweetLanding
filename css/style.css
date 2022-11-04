@@ -131,12 +131,14 @@ a {
 }
 
 /* ------------button-------------*/
+
 .button {
   font-weight: 700;
   font-size: 16px;
   text-decoration: none;
   padding-left: 35px;
   padding-right: 35px;
+
   height: 44px;
   color: var(--dark-pink-color);
   background-color: var(--white-color);
@@ -145,6 +147,11 @@ a {
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+
+  box-shadow: 0 1px 2px rgba(212, 20, 67, 0.1);
+  border-style: solid;
+  border-color: rgba(212, 20, 67, 0.1);
+  border-width: 1px;
 }
 
 .button__label-header {
@@ -291,7 +298,7 @@ a {
 }
 
 @media screen and (max-width: 500px) {
-  .button {
+  .header__button {
     display: none;
   }
   .header__burger {
@@ -396,6 +403,12 @@ a {
   background-color: var(--dark-pink-color);
   transition: all 0.4s ease 0s;
   z-index: 5;
+
+  box-shadow: 0 4px 8px rgba(212, 20, 67, 0.1);
+
+  border-style: solid;
+  border-color: rgba(212, 20, 67, 0.1);
+  border-width: 1px;
 }
 .button__label-dark:after {
   content: "";
@@ -674,8 +687,8 @@ a {
     font-weight: 400;
     font-size: 12px;
     text-decoration: none;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
+
     height: 35px;
     color: var(--dark-pink-color);
     background-color: var(--white-color);
@@ -683,6 +696,7 @@ a {
     border-radius: 22px;
     text-align: center;
     cursor: pointer;
+    justify-content: center;
   }
   .button__label-header::after {
     content: "";
@@ -1019,13 +1033,13 @@ details[open] summary {
     line-height: 35px;
   }
   .products__title {
-    margin-bottom: 191px;
+    margin-bottom: 80px;
   }
   .products__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 24px;
-    row-gap: 200px;
+    row-gap: 100px;
   }
   .products__item {
     display: flex;
@@ -1044,9 +1058,10 @@ details[open] summary {
   .item__pic {
     position: absolute;
     letter-spacing: 4%;
-    top: -40%;
-    left: 0;
-    max-width: 280px;
+
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
   }
 }
 /*---------------------products media end-----------------*/
@@ -1390,7 +1405,11 @@ details[open] summary {
   display: flex;
   flex-direction: column;
   background-color: var(--white-color);
-  box-shadow: 0 8px 20px rgba(212, 20, 67, 0.25);
+  box-shadow: 0 4px 8px rgba(212, 20, 67, 0.1);
+
+  border-style: solid;
+  border-color: rgba(212, 20, 67, 0.1);
+  border-width: 1px;
   border-radius: 25px;
   padding: 51px 43px 61px 43px;
 }
@@ -1401,7 +1420,7 @@ details[open] summary {
   background: var(--light-yellow);
   color: var(--white-color);
   text-transform: uppercase;
-  border-radius: 6px;
+  border-radius: 10px;
   width: 73px;
   height: 28px;
   text-align: center;
@@ -1414,7 +1433,7 @@ details[open] summary {
   background: var(--light-green);
   color: var(--white-color);
   text-transform: uppercase;
-  border-radius: 6px;
+  border-radius: 10px;
   width: 138px;
   height: 28px;
   text-align: center;
@@ -1501,8 +1520,9 @@ details[open] summary {
   .locations__item {
     display: flex;
     flex-direction: column;
-    box-shadow: 0 8px 10px rgba(212, 20, 67, 0.25);
+
     border-radius: 25px;
+
     padding: 51px 23px 51px 23px;
   }
 }
@@ -1530,7 +1550,7 @@ details[open] summary {
     display: flex;
     max-width: 250px;
     flex-direction: column;
-    box-shadow: 0 8px 10px rgba(212, 20, 67, 0.25);
+
     border-radius: 25px;
     padding: 51px 33px 51px 33px;
     margin-left: 30px;
@@ -1555,6 +1575,24 @@ details[open] summary {
     );
   }
 }
+@media screen and (max-width: 500px) {
+  .locations__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .locations__button {
+    width: 250px;
+    margin-right: 0px;
+  }
+  .locations__button:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 35px;
+  }
+  .locations {
+    margin-bottom: 0px;
+  }
+}
+
 /*--------media locations section end-----------------*/
 
 /*--------footer section -----------------*/
@@ -1628,15 +1666,6 @@ details[open] summary {
 }
 /*--------media footer ----------------*/
 @media screen and (max-width: 767px) {
-  .footer {
-    padding-top: 20px;
-    padding-bottom: 180px;
-    background-image: url(../img/footer/footer-bg.png);
-    background-repeat: no-repeat;
-    background-size: 800px 144px;
-    background-position: center bottom;
-    background-color: var(--super-light-rink-color);
-  }
   .footer__container {
     justify-content: center;
     flex-direction: column;
@@ -1654,6 +1683,15 @@ details[open] summary {
   .footer__list {
     justify-content: center;
     align-items: center;
+  }
+  .footer {
+    padding-top: 5px;
+    padding-bottom: 100px;
+    background-image: url(../img/footer/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: center bottom;
+    background-color: var(--super-light-rink-color);
   }
 }
 @media screen and (max-width: 367px) {

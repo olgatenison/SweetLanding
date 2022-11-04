@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
-
+    <link rel="stylesheet" href="./css/elements.css" />
     <title>SweetLanding</title>
   </head>
   <body>
@@ -77,8 +77,8 @@
           <span class="burger__line burger__line-third"></span>
         </div>
 
-        <button class="button" type="button">
-          <span class="button__label button__label-header link">Buy now</span>
+        <button id="#popup-btn" class="button header__button" type="button">
+          <span class="button__label button__label-header ">Franchise</span>
         </button>
       </div>
     </header>
@@ -474,7 +474,7 @@
               <address class="locations__adress">
                 ​<a href="tel:+610383766284">+61(0) 383 766 284 </a>
                 <br />
-                <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+                <a href="mailto:noreply@envato.com">woow@gmail.com</a>
               </address>
             </li>
             <!--1 locations end -->
@@ -497,7 +497,7 @@
               <address class="locations__adress">
                 ​<a href="tel:+610383766284">+61(0) 383 766 284 </a>
                 <br />
-                <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+                <a href="mailto:noreply@envato.com">woow@gmail.com</a>
               </address>
             </li>
             <!--2 locations end -->
@@ -520,7 +520,7 @@
               <address class="locations__adress">
                 ​<a href="tel:+610383766284">+61(0) 383 766 284 </a>
                 <br />
-                <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+                <a href="mailto:noreply@envato.com">woow@gmail.com</a>
               </address>
             </li>
             <!--3 locations end -->
@@ -534,9 +534,9 @@
             >
           </button>
           
-          <button class="locations__button button" type="button">
+          <button data-popup-target="#popup" class="locations__button button " type="button">
             <span class="button__label button__label-header link"
-              >Franchise</span
+            >Franchise</span
             >
           </button>
         </div>
@@ -588,10 +588,73 @@
       </p>
       <p class="footer__copiright">© 2019 - IceCream. All Rights Reserved. </p>
       </div>
-  
-        
+          
     </footer>
+
     <!--footer end-->
+
+    <!--popup 
+    <div id="popup" class="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <a href=""  class="popup__close close-popup"><span class="popup__close-line"></span>
+            <span class="popup__close-line">
+            </span>
+          </a>
+
+          <div class="popup__title section-title">Find out more about our franchise opportunities</div>
+          <form class="popup__form">             
+              
+              <label>
+                 <input type="firstname" name="firstname" autofocus placeholder="First Name" class="popup__input"/>
+              </label>
+              <label>
+                 <input type="lastname" name="lastname" placeholder="Last Name"class="popup__input"/>
+              </label>
+              <label>
+                  <input type="email" name="email" placeholder="Email Address"class="modal_input"/>
+              </label>  
+              <label>
+                <input type="country" name="country" placeholder="Country"class="modal_input"/>
+              </label>
+              <button type="submit" class="button modal_btn button-dark ">Send Me Franchise Report</button>
+                         
+            </form>
+            <img src="./img/modal.png" alt="icecream" class="popup_img">
+
+        </div>
+      </div>
+    </div>
+    popup -->
+    <!--popup2 -->
+    <section class="contact">
+      <div class="container contact__container">
+        <div class="contact__info info">
+          <h2 class="info__title">Contact Info</h2>
+          <ul class="info__list">
+            <li class="info__item">
+              <span><img src="./img/modal/placeholder.png" alt="adress"></span>
+              <span>2912 Meadowbrook Road <br>
+              Los Angeles, CA <br>
+            90017</span>
+            </li>  
+            <li class="info__item">
+              <span><img src="./img/modal/envelope.png" alt="mail"></span>
+              <span>woow@gmail.com</span>
+            </li>  
+            <li class="info__item">
+              <span><img src="./img/modal/iphone.png" alt="phone"></span>
+              <span>310-286-162</span>
+            </li>
+          </ul>
+        </div>
+        <div class="contact__form"></div>
+      </div>
+    </section>
+
+    <!--popup2 end-->
+
+    <script src="./js/popup.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
