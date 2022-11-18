@@ -561,7 +561,7 @@
      
       <ul class="footer__list">
         <li class="footer__item">
-          <div class="footer__social">
+          <div class="footer__social ">
             <a href="#">
               <img src="./img/svg/git.svg" alt="github">
             </a>
@@ -629,9 +629,9 @@
     <!--popup2 -->
     <section class="contact">
       <div class="container contact__container">
+        <h2 class="info__title">Contact Info</h2>
         <div class="contact__info info">
-          <h2 class="info__title">Contact Info</h2>
-          <ul class="info__list">
+            <ul class="info__list">
             <li class="info__item">
               <span><img src="./img/modal/placeholder.png" alt="adress"></span>
               <span>2912 Meadowbrook Road <br>
@@ -646,9 +646,71 @@
               <span><img src="./img/modal/iphone.png" alt="phone"></span>
               <span>310-286-162</span>
             </li>
+          </ul> 
+
+          <ul class="modal__list">
+            <li class="modal__item">
+              <div class="modal__social ">
+                <a href="#">
+                  <img src="./img/svg/git.svg" alt="github">
+                </a>
+              </div>
+            </li> 
+            <li class="modal__item">
+              <div class="modal__social">
+                <a href="#">
+                  <img src="./img/svg/fb.svg" alt="facebook">
+                </a>
+              </div>
+            </li> 
+            <li class="modal__item">
+              <div class="modal__social">
+                <a href="#">
+                  <img src="./img/svg/telegram.svg" alt="telegram">
+                </a>
+              </div>
+            </li>
           </ul>
         </div>
-        <div class="contact__form"></div>
+        <div class="contact__form">
+
+          <h2 class="contact__title">Send a Message</h2>
+          <div class="contact__form-box">
+
+            <div class="contact__input-box w50">
+              <input type="text" required>
+              <span>Firts Name</span>
+            </div>
+            
+            <div class="contact__input-box w50">
+              <input type="text" required>
+              <span>Last Name</span>
+            </div>
+            
+            <div class="contact__input-box w50">
+              <input type="email" required>
+              <span>Email Address</span>
+            </div>  
+
+            <div class="contact__input-box w50">
+              <input type="tel" required>
+              <span>Mobile Number</span>
+            </div>
+
+            <div class="contact__input-box w100">
+              <textarea required></textarea>
+              <span>Write your message here...</span>
+            </div>
+            
+            <div class="contact__input-box w100">
+              <input type="submit" value="Send" class="contact__submit ">
+            </div>
+
+            <img src="./img/modal.png" alt="icecream" class="contact_img">
+
+          </div>
+
+        </div>
       </div>
     </section>
 
