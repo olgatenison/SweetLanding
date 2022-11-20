@@ -78,7 +78,7 @@
         </div>
 
         <button id="#popup-btn" class="button header__button" type="button">
-          <span class="button__label button__label-header ">Franchise</span>
+          <span class="button__label button__label-header " data-modal-open>Franchise</span>
         </button>
       </div>
     </header>
@@ -534,7 +534,7 @@
             >
           </button>
           
-          <button data-popup-target="#popup" class="locations__button button " type="button">
+          <button data-popup-target="#popup" class="locations__button button " type="button"data-modal-open >
             <span class="button__label button__label-header link"
             >Franchise</span
             >
@@ -593,43 +593,13 @@
 
     <!--footer end-->
 
-    <!--popup 
-    <div id="popup" class="popup">
-      <div class="popup__body">
-        <div class="popup__content">
-          <a href=""  class="popup__close close-popup"><span class="popup__close-line"></span>
-            <span class="popup__close-line">
-            </span>
-          </a>
 
-          <div class="popup__title section-title">Find out more about our franchise opportunities</div>
-          <form class="popup__form">             
-              
-              <label>
-                 <input type="firstname" name="firstname" autofocus placeholder="First Name" class="popup__input"/>
-              </label>
-              <label>
-                 <input type="lastname" name="lastname" placeholder="Last Name"class="popup__input"/>
-              </label>
-              <label>
-                  <input type="email" name="email" placeholder="Email Address"class="modal_input"/>
-              </label>  
-              <label>
-                <input type="country" name="country" placeholder="Country"class="modal_input"/>
-              </label>
-              <button type="submit" class="button modal_btn button-dark ">Send Me Franchise Report</button>
-                         
-            </form>
-            <img src="./img/modal.png" alt="icecream" class="popup_img">
-
-        </div>
-      </div>
-    </div>
-    popup -->
-    <!--popup2 -->
-    <section class="contact">
+    <!--popup-->
+    <section class="contact is-hidden" data-modal>
       <div class="container contact__container">
+
         
+
         <div class="contact__info info">
           <h2 class="info__title">Contact Info</h2>
             <ul class="info__list">
@@ -675,6 +645,11 @@
         </div>
         <div class="contact__form">
 
+          <a href=""  class="contact__close" data-modal-close>
+            <span class="contact__close-line"></span>
+            <span class="contact__close-line"></span>
+          </a>
+
           <h2 class="contact__title">Send a Message</h2>
           <div class="contact__form-box">
 
@@ -715,7 +690,7 @@
       </div>
     </section>
 
-    <!--popup2 end-->
+    <!--popup end-->
 
     <script src="./js/popup.js"></script>
     <script src="./js/main.js"></script>
