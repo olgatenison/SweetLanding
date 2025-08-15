@@ -5,6 +5,14 @@ A tiny bit of **vanilla JS** is used for the modal, burger menu, and minor UI in
 
 ---
 
+<p align="center">
+  <img src="/img/prew/p-1.jpg" alt="Project preview" width="600" />
+</p>
+
+
+
+---
+
 ## 🎯 Goal
 
 - Practice **page structure** and **BEM-style class naming**.  
