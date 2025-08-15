@@ -1,4 +1,5 @@
-# SweetLanding — Pure CSS Training Site (with a dash of JS)
+# SweetLanding — Pure CSS Training Site 
+(with a dash of JS)
 
 A small training project to practice **clean HTML/CSS** layout: grids, typography, responsive blocks, simple transitions, and basic interactivity **without frameworks or build tools**.  
 A tiny bit of **vanilla JS** is used for the modal, burger menu, and minor UI interactions.
@@ -10,7 +11,6 @@ A tiny bit of **vanilla JS** is used for the modal, burger menu, and minor UI in
 </p>
 
 
-
 ---
 
 ## 🎯 Goal
@@ -19,6 +19,15 @@ A tiny bit of **vanilla JS** is used for the modal, burger menu, and minor UI in
 - Train **Flexbox/Grid** layouts, buttons, lists, and cards.  
 - Build simple interactions: burger menu, accordion, modal.  
 - Keep the stack minimal: **plain HTML/CSS/JS** only.
+
+---
+
+
+
+<p align="center">
+  <img src="/img/prew/p-2.jpg" alt="Project preview" width="600" />
+</p>
+
 
 ---
 
@@ -36,6 +45,14 @@ A tiny bit of **vanilla JS** is used for the modal, burger menu, and minor UI in
 
 ---
 
+
+
+<p align="center">
+  <img src="/img/prew/p-3.jpg" alt="Project preview" width="600" />
+</p>
+
+
+---
 ## 🛠 Tech
 
 - **HTML5** — semantic markup.  
