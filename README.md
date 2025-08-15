@@ -60,7 +60,4 @@ A tiny bit of **vanilla JS** is used for the modal, burger menu, and minor UI in
 - **Vanilla JS** — modal/burger/accordion (`popup.js`, `main.js`).  
 - **No bundlers** — open `index.html` directly.
 
----
-
-## 📁 Project Structure
 
